@@ -133,10 +133,7 @@ module Mongoid
 
 				def descendants
 					# workorund for mongoid unexpected behavior
-					_new_record_var = self.instance_variable_get(:@new_record)
-					_new_record = _new_record_var != false
-
-					return [] if _new_record
+					return [] if !!self.instance_variable_get(:@new_record)
 					acts_as_tree_options[:class].all_in(path_field => [self._id]).order_by tree_order
 				end
 
