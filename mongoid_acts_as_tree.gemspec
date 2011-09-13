@@ -47,10 +47,9 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<mongoid>, [">= 0"])
       s.add_runtime_dependency(%q<bson>, [">= 0"])
       s.add_runtime_dependency(%q<bson_ext>, [">= 0"])
-      s.add_runtime_dependency(%q<shoulda>, [">= 0"])
-      s.add_runtime_dependency(%q<jeweler>, [">= 0"])
       s.add_runtime_dependency(%q<mongoid>, [">= 2.0.0"])
       s.add_runtime_dependency(%q<bson>, [">= 0.20.1"])
+      s.add_development_dependency(%q<jeweler>, [">= 0"])
       s.add_development_dependency(%q<shoulda>, [">= 2.10.2"])
     else
       s.add_dependency(%q<mongoid>, [">= 0"])
